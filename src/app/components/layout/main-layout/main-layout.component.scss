@@ -1,0 +1,28 @@
+$footer-height: 223px; // (without border)
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -$footer-height;
+}
+
+main {
+    display: flex;
+    align-items: stretch;
+    padding-top: 50px;
+}
+
+.content {
+    border-radius: 0.5em;
+    display: block;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+    width: 70%;
+    height: auto;
+    color: white;
+    padding: 25px;
+    position: relative;
+    top: -3.5em;
+    transition: 0.3s;
+
+    margin-bottom: $footer-height;
+}

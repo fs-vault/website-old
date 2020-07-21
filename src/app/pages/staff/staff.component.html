@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <h1 class="heading">The Staff</h1>
+    <p class="propaganda">
+        Hey! We're the Firestarter staff, and we're here to help give you the best experience on our community server.
+        We all work closely together, focusing on you, the players!
+        If you have any issues/inquiries, reach out to any one of our applicable staff members!
+    </p>
+
+    <div class="section-wrapper" *ngFor="let rank of data | async">
+        <div class="section-badge" [ngStyle]="{'background-color': rank.color, 'border-bottom-color': rank.borderColor}">{{ rank.title }}</div>
+        <div class="section">
+            <app-member-quote *ngFor="let member of rank.members" [data]="member"></app-member-quote>
+        </div>
+    </div>
+  </div>

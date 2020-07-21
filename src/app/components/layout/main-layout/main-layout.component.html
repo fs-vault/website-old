@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <app-header></app-header>
+
+    <main class="content container" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+        <router-outlet #o="outlet"></router-outlet>
+    </main>
+</div>
+
+<app-footer></app-footer>

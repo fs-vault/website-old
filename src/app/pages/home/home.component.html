@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-xl-9">
+        <h1 class="content-header">Announcements</h1>
+        <div class="post" *ngFor="let post of posts | async">
+            <h2 class="title">{{post.title}}</h2>
+            <img src="{{post.banner}}}" class="post-banner" alt="Banner">
+            <markdown [data]="post.content" class="post-content" ngPreserveWhitespaces></markdown>
+        </div>
+    </div>
+    <div class="col-xl-3 sidebar">
+        <app-online-card></app-online-card>
+        <app-top-voter-card></app-top-voter-card>
+    </div>
+</div>

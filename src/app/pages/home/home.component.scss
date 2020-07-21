@@ -1,0 +1,36 @@
+.content-header {
+  color: #727272;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding-left: 0.1em;
+}
+
+.post {
+  background-color: white;
+  border-radius: 0.7em;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.02);
+  margin-bottom: 0;
+  padding: 1.3em;
+}
+
+.title {
+  background-color: #FF5166;
+  border-bottom: solid 0.1em #D63F51;
+  padding: 10px;
+  border-radius: 0.3em;
+  font-size: 1em;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(59, 59, 59, 0.2);
+  color: white;
+}
+
+.post-banner {
+  display: block;
+  width: 100%;
+  border-radius: 0.3em;
+  margin-bottom: 1em;
+}
+
+.post-content {
+  color: #535353;
+}

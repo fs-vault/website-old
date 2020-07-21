@@ -1,0 +1,5 @@
+<div class="member" *ngIf="data">
+    <img class="head" [src]="'https://visage.surgeplay.com/bust/' + data.uuid">
+    <h1 class="name">{{ data.name }}</h1>
+    <h4 class="quote">"{{ data.quote }}"</h4>
+</div>
